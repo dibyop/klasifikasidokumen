@@ -13,7 +13,7 @@ inspect(docs[2])
 docs <- tm_map(docs, removePunctuation)  
 docs <- tm_map(docs, removeNumbers)  
 docs <- tm_map(docs, tolower)  
-docs <- tm_map(docs, removeWords, c("dapat", "yang","adalah","untuk","dan"))  
+docs <- tm_map(docs, removeWords, c("ada", "bisa","adalah","dan","untuk"))  
 corpus <- VCorpus(VectorSource(docs))
 
 # Create a document term matrix.
